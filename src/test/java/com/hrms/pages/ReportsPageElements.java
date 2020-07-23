@@ -30,6 +30,9 @@ public class ReportsPageElements extends CommonMethods {
 	@FindBy(xpath="//a[@id='btnAddDisplayField']")
 	public WebElement displayAdd;
 	
+	@FindBy(xpath="//input[@type='checkbox']")
+	public WebElement checkbox;
+	
 	@FindBy(xpath="//input[@id='btnSave']")
 	public WebElement save ;
 	

@@ -3,6 +3,10 @@ package com.hrms.utils;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
 
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -40,14 +44,18 @@ public class ExcelUtility {
 		return sheet.getRow(rowIndex).getCell(colIndex).toString();
 	}
 	
-	public static Object[][] excelToArray(String filePath, String sheetName){
+	public static List<Map<String, String>> excelIntoListOfMaps(String filePath, String sheetName){
 		openExcel(filePath,sheetName);
 		
-		Object[][] data=new Object[rowCount()-1][colCount()]; //basligi almamak icin -1 kullandik
-		for (int i=1; i <rowCount(); i++) {  //eliminate header o yuzden 1 den basliyor
-			for (int j =0; j <colCount(); j++) {
-				data[i-1][j]=getCellData(i,j);
+		 List<Map<String, String>> data=new  ArrayList<Map<String, String>>(); 
+		
+		for (int i=1; i<rowCount(); i++) {  //values cell datalarimiz
+			Map<String, String> map=new LinkedHashMap<>();
+			
+			for(int j=0; j<colCount(); j++) {            // key values
+				map.put(getCellData(0, j), getCellData(i, j));
 			}
+			data.add(map);
 		}
 		return data;
 	}
