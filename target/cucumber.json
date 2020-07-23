@@ -1,0 +1,564 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Given user logged in into HRMS",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user navigates to Add Employee page",
+            "match": {
+              "location": "com.hrms.steps.AddEmployee.user_navigates_to_Add_Employee_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-23T23:43:58.006Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.hrms.steps.Hooks.start(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Add Employee without employee id",
+        "description": "",
+        "id": "create-an-employee-and-login-credentials-for-an-employee;add-employee-without-employee-id",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.hrms.steps.Hooks.end(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "user logged in into HRMS",
+            "match": {
+              "location": "com.hrms.steps.AddEmployee.user_logged_in_into_HRMS()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "user navigates to Add Employee page",
+            "match": {
+              "location": "com.hrms.steps.AddEmployee.user_navigates_to_Add_Employee_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 18,
+            "name": "user enters employees first name and last name",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "user deletes employee id",
+            "match": {
+              "location": "com.hrms.steps.AddEmployee.user_deletes_employee_id()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "user clicks save button",
+            "match": {
+              "location": "com.hrms.steps.AddEmployee.user_clicks_save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "employee is added successfully",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Create an Employee and Login Credentials for an Employee",
+    "description": "",
+    "id": "create-an-employee-and-login-credentials-for-an-employee",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/AddAnEmployee.feature",
+    "tags": [
+      {
+        "name": "@tag",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-07-23T23:43:58.600Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.hrms.steps.Hooks.start(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Search employee by id",
+        "description": "",
+        "id": "employee-search;search-employee-by-id",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.hrms.steps.Hooks.end(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user is navigated to HRMS",
+            "match": {
+              "location": "com.hrms.steps.EmployeeSearchSteps.user_is_navigated_to_HRMS()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user is logged with valid admin credentials",
+            "match": {
+              "location": "com.hrms.steps.EmployeeSearchSteps.user_is_logged_with_valid_admin_credentials()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user navigate to employee list page",
+            "match": {
+              "location": "com.hrms.steps.EmployeeSearchSteps.user_navigate_to_employee_list_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user enters valid employee id",
+            "match": {
+              "location": "com.hrms.steps.EmployeeSearchSteps.user_enters_valid_employee_id()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "click on search button",
+            "match": {
+              "location": "com.hrms.steps.EmployeeSearchSteps.click_on_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user see employee information is displayed",
+            "match": {
+              "location": "com.hrms.steps.EmployeeSearchSteps.user_see_employee_information_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sprint13"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Employee Search",
+    "description": "",
+    "id": "employee-search",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/SearchEmployee.feature",
+    "tags": [
+      {
+        "name": "@sprint13",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-07-23T23:43:58.682Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.hrms.steps.Hooks.start(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Valid Login Credentials",
+        "description": "",
+        "id": "login-valid-admin-and-ess-credentials;valid-login-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.hrms.steps.Hooks.end(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "user enter valid \"Admin\" and \"Hum@nhrm123\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 18,
+            "name": "user click on login button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 19,
+            "name": "\"Admin\" is successfully logged in",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-23T23:43:58.706Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.hrms.steps.Hooks.start(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Valid Login Credentials",
+        "description": "",
+        "id": "login-valid-admin-and-ess-credentials;valid-login-credentials;;3",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.hrms.steps.Hooks.end(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "user enter valid \"abd77\" and \"Syntax123!\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 18,
+            "name": "user click on login button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 19,
+            "name": "\"Abdullah\" is successfully logged in",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Login valid Admin and ESS Credentials",
+    "description": "",
+    "id": "login-valid-admin-and-ess-credentials",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/loginCredentials.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-07-23T23:43:58.717Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.hrms.steps.Hooks.start(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Login with valid username and invalid password",
+        "description": "",
+        "id": "user-should-see-error-message-when-login-with-invalid-credentials;login-with-valid-username-and-invalid-password",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.hrms.steps.Hooks.end(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user navigated to HRMS",
+            "match": {
+              "location": "com.hrms.steps.LoginWithInvalidCredentials.user_navigated_to_HRMS()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user enters valid username and invalid password",
+            "match": {
+              "location": "com.hrms.steps.LoginWithInvalidCredentials.user_enters_valid_username_and_invalid_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user see Invalid credentials error message",
+            "match": {
+              "location": "com.hrms.steps.LoginWithInvalidCredentials.user_see_Invalid_credentials_error_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-23T23:43:58.731Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.hrms.steps.Hooks.start(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Login with valid username and without password",
+        "description": "",
+        "id": "user-should-see-error-message-when-login-with-invalid-credentials;login-with-valid-username-and-without-password",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.hrms.steps.Hooks.end(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user navigated to HRMS",
+            "match": {
+              "location": "com.hrms.steps.LoginWithInvalidCredentials.user_navigated_to_HRMS()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user enters valid username and empty password",
+            "match": {
+              "location": "com.hrms.steps.LoginWithInvalidCredentials.user_enters_valid_username_and_empty_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "user see Password can not be empty error message",
+            "match": {
+              "location": "com.hrms.steps.LoginWithInvalidCredentials.user_see_Password_can_not_be_empty_error_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "User should see error message when login with invalid credentials",
+    "description": "",
+    "id": "user-should-see-error-message-when-login-with-invalid-credentials",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/loginWithInvalidCredentials.feature",
+    "tags": []
+  }
+]
